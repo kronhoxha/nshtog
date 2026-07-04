@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N'Shtog · Location</title>
+</head>
+<body>
+
+  <nav id="main-nav">
+    <a class="nav-brand" href="index.html">
+      <span class="nav-brand-name">N'Shtog</span>
+      <span class="nav-brand-sub">coffe&amp;bar</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a class="active" href="location.html">Location</a>
+      <a class="nav-order-btn" href="menu.html">See Menu</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ══ LOCATION PAGE ══ -->
+  <div class="page active" id="page-location">
+    <div class="location-hero">
+      <h2>Find us</h2>
+      <p>Come as you are — stay as long as you like</p>
+    </div>
+    <div class="location-body">
+      <div class="location-cards">
+        <div class="location-card">
+          <div class="loc-icon">📍</div>
+          <div><h4>Address</h4><p>Rruga Mbretëresha Teuta<br>Pristina, Kosovo</p></div>
+        </div>
+        <div class="location-card">
+          <div class="loc-icon">📞</div>
+          <div><h4>Contact</h4><p>+383 45 221 144</p></div>
+        </div>
+        <div class="location-card">
+          <div class="loc-icon">🕐</div>
+          <div><h4>Hours</h4><p>Mon–Sun: 08:00 – 24:00</p></div>
+        </div>
+        <div class="location-card">
+          <div class="loc-icon">🅿️</div>
+          <div><h4>Parking</h4><p>Free parking lot available</p></div>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1326.2622093359803!2d21.18315553181555!3d42.664893528839556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549f1c57267db9%3A0x1f71d62b5b9828ff!2sn&#39;Shtog!5e1!3m2!1sen!2s!4v1782589865573!5m2!1sen!2s" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand-name">N'Shtog</div>
+        <div class="footer-brand-sub">coffe&amp;bar</div>
+        <p class="footer-brand-desc">A cozy café in the heart of Pristina. Coffee crafted with intention, guests welcomed with warmth.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="location.html">Location</a>
+      </div>
+      <div class="footer-col">
+        <h5>Visit</h5>
+        <p>Rruga Mbretëresha Teuta</p>
+        <p>Pristina, Kosovo</p>
+        <p style="margin-top:8px;">+383 45 221 144</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 <span>N'Shtog</span> coffe&amp;bar · All rights reserved
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

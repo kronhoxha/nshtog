@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>N'Shtog · coffe&bar</title>
+</head>
+<body>
+
+  <nav id="main-nav">
+    <a class="nav-brand" href="index.html">
+      <span class="nav-brand-name">N'Shtog</span>
+      <span class="nav-brand-sub">coffe&amp;bar</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="location.html">Location</a>
+      <a class="nav-order-btn" href="menu.html">See Menu</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ══ HOME PAGE ══ -->
+  <div class="page active" id="page-home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-bg-placeholder">☕</div>
+      </div>
+      <div class="hero-content">
+        <img class="hero-logo" src="images/shtoglogo.jpeg" alt="N'Shtog">
+        <p class="hero-eyebrow">Pristina, Kosovo</p>
+        <h1>Coffee, craft<br>&amp; <span>good vibes.</span></h1>
+        <p class="hero-tagline">A place where every cup is made with intention.<br>Come in, slow down, stay a while.</p>
+        <div class="hero-actions">
+          <button class="btn-gold" onclick="window.location.href='menu.html'">See our menu</button>
+          <button class="btn-ghost" onclick="window.location.href='location.html'">Find us</button>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- Info strip -->
+    <div class="info-strip">
+      <div class="info-strip-inner">
+        <div class="info-strip-item">
+          <h5>Hours</h5>
+          <p>Mon–Fri 08:00–24:00</p>
+        </div>
+        <div class="info-strip-item">
+          <h5>Location</h5>
+          <p>Rruga Mbretëresha Teuta, Pristina</p>
+        </div>
+        <div class="info-strip-item">
+          <h5>Phone</h5>
+          <p>+383 45 221 144</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Photo grid -->
+    <section class="photo-grid-section">
+      <p class="section-label" style="padding: 0 2rem;">Inside N'Shtog</p>
+      <div class="photo-grid">
+       <div class="photo-grid-item">
+  <img src="images/fotoaperol.jpeg" alt="N'Shtog">
+</div>
+<div class="photo-grid-item">
+  <img src="images/foto2.jpeg" alt="N'Shtog">
+</div>
+<div class="photo-grid-item">
+  <img src="images/fotokafe.jpeg" alt="N'Shtog">
+</div>
+<div class="photo-grid-item">
+  <img src="images/foto4.jpeg" alt="N'Shtog">
+</div>
+<div class="photo-grid-item">
+  <img src="images/foto1.jpeg" alt="N'Shtog">
+</div>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about-section">
+      <div class="about-inner">
+        <div class="about-img-wrap">
+<img class="about-img-main" src="images/fotofiat.jpeg" alt="N'Shtog">
+          <div class="about-accent-box"></div>
+        </div>
+        <div class="about-text">
+          <p class="section-label">Our story</p>
+          <h2>More than<br><em>great coffee</em></h2>
+          <p>N'Shtog is a cozy corner of Pristina where the aroma of freshly brewed coffee meets warm hospitality. Every cup is crafted with care, every guest welcomed like a regular.</p>
+          <p>We partner with Buondi Craft to bring you beans sourced from Vietnam, Brazil, and Colombia — roasted dark, brewed right.</p>
+          <div class="about-feats">
+            <div class="about-feat">
+              <h4>Beans Origin</h4>
+              <p>Vietnam, Brazil, Colombia</p>
+            </div>
+            <div class="about-feat">
+              <h4>Roast Profile</h4>
+              <p>Intense, dark roast</p>
+            </div>
+            <div class="about-feat">
+              <h4>Coffee Partner</h4>
+              <p>Buondi Craft</p>
+            </div>
+            <div class="about-feat">
+              <h4>Atmosphere</h4>
+              <p>Cozy, warm, colorful</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu preview -->
+    <section class="menu-preview-section">
+      <p class="section-label">What we serve</p>
+      <h2 class="section-title">Our Menu</h2>
+      <div class="menu-cats">
+        <button class="menu-cat-btn active" onclick="switchPreviewTab('preview-coffee', this)">☕ Coffee</button>
+        <button class="menu-cat-btn" onclick="switchPreviewTab('preview-drinks', this)">🧃 Drinks</button>
+        <button class="menu-cat-btn" onclick="switchPreviewTab('preview-cocktails', this)">🍹 Alcohol</button>
+        <button class="menu-cat-btn" onclick="switchPreviewTab('preview-food', this)">🥐 Food</button>
+
+      </div>
+
+      <div class="menu-grid active" id="preview-coffee">
+        <div class="menu-item"><div><h4>Espresso</h4></div><div class="menu-item-price">€1</div></div>
+        <div class="menu-item"><div><h4>Makiato e Madhe</h4></div><div class="menu-item-price">€1.20</div></div>
+        <div class="menu-item"><div><h4>Makiato e Vogël</h4></div><div class="menu-item-price">€1</div></div>
+        <div class="menu-item"><div><h4>Cappuccino</h4></div><div class="menu-item-price">€1.50</div></div>
+        <div class="menu-item"><div><h4>Pa Plum</h4></div><div class="menu-item-price">€1.20</div></div>
+        <div class="menu-item"><div><h4>Ice Latte</h4></div><div class="menu-item-price">€1.50</div></div>
+        <div class="menu-item"><div><h4>Amerikane</h4></div><div class="menu-item-price">€1.20</div></div>
+        <div class="menu-item"><div><h4>Bambi</h4></div><div class="menu-item-price">€1.50</div></div>
+      </div>
+
+      <div class="menu-grid" id="preview-drinks">
+        <div class="menu-item"><div><h4>Coca Cola</h4></div><div class="menu-item-price">€1.50</div></div>
+        <div class="menu-item"><div><h4>Sprite</h4></div><div class="menu-item-price">€1.50</div></div>
+        <div class="menu-item"><div><h4>Schweppes</h4></div><div class="menu-item-price">€1.50</div></div>
+        <div class="menu-item"><div><h4>Fructal</h4></div><div class="menu-item-price">€1.50</div></div>
+        <div class="menu-item"><div><h4>Fresh Lemonade</h4></div><div class="menu-item-price">€2</div></div>
+        <div class="menu-item"><div><h4>Lëng Boronice</h4></div><div class="menu-item-price">€2</div></div>
+        <div class="menu-item"><div><h4>Birra Peja</h4></div><div class="menu-item-price">€2</div></div>
+        <div class="menu-item"><div><h4>Super Bock</h4></div><div class="menu-item-price">€2</div></div>
+        <div class="menu-item"><div><h4>Heineken</h4></div><div class="menu-item-price">€2</div></div>
+        <div class="menu-item"><div><h4>Lasko</h4></div><div class="menu-item-price">€2</div></div>
+        <div class="menu-item"><div><h4>Corona</h4></div><div class="menu-item-price">€2</div></div>
+        <div class="menu-item"><div><h4>Red Bull</h4></div><div class="menu-item-price">€2</div></div>
+        <div class="menu-item"><div><h4>Raki rrushi</h4></div><div class="menu-item-price">€2</div></div>
+        <div class="menu-item"><div><h4>Raki Dardhe</h4></div><div class="menu-item-price">€2</div></div>
+      </div>
+
+     <div class="menu-grid" id="preview-cocktails">
+        <div class="menu-item"><div><h4>Whiskey Sour</h4></div><div class="menu-item-price">€5</div></div>
+        <div class="menu-item"><div><h4>Vodka Sour</h4></div><div class="menu-item-price">€5</div></div>
+        <div class="menu-item"><div><h4>Negroni</h4></div><div class="menu-item-price">€5</div></div>
+        <div class="menu-item"><div><h4>Old Fashioned</h4></div><div class="menu-item-price">€5</div></div>
+        <div class="menu-item"><div><h4>Cuba Libre</h4></div><div class="menu-item-price">€4</div></div>
+        <div class="menu-item"><div><h4>Mojito</h4></div><div class="menu-item-price">€5</div></div>
+        <div class="menu-item"><div><h4>Cosmopolitan</h4></div><div class="menu-item-price">€5</div></div>
+        <div class="menu-item"><div><h4>Aperol Spritz</h4></div><div class="menu-item-price">€5</div></div>
+        <div class="menu-item"><div><h4>Margarita</h4></div><div class="menu-item-price">€5</div></div>
+        <div class="menu-item"><div><h4>Gin Tonic</h4></div><div class="menu-item-price">€4</div></div>
+        <div class="menu-item"><div><h4>Shtog Cocktail</h4></div><div class="menu-item-price">€5</div></div>
+        <div class="menu-item"><div><h4>Vodka Redbull</h4></div><div class="menu-item-price">€5</div></div>
+        <div class="menu-item"><div><h4>The Lemon-Mint Spritz</h4></div><div class="menu-item-price">€3</div></div>
+     </div> 
+
+      <div class="menu-grid" id="preview-food">
+        <div class="menu-item"><div><h4>Krepa</h4><p>Nutela, Biskotë, Dredhza, Banane</p></div><div class="menu-item-price">€2</div></div>
+        <div class="menu-item"><div><h4>Grilled Chicken Pesto Sandwich</h4><p>Ciabatta, chicken, mozzarella, pesto</p></div><div class="menu-item-price">€3.50</div></div>
+        <div class="menu-item"><div><h4>Tuna Sandwich</h4><p>Multigrain, Mayonnaise, Tuna, Lettuce</p></div><div class="menu-item-price">€3.50</div></div>
+        <div class="menu-item"><div><h4>Prosciutto Sandwich</h4><p>Ciabatta, Beef prosciutto, Arugula, Aioli</p></div><div class="menu-item-price">€3.50</div></div>
+      </div>
+
+      <div class="menu-cta">
+        <button class="btn-gold" style="background:#a07a28;" onclick="window.location.href='menu.html'">Full menu →</button>
+      </div>
+    </section>
+
+    <!-- Partner -->
+    <section class="partner-section">
+      <div class="partner-inner">
+        <div class="partner-logo-box">
+           <img src="images/buondilogo.png" alt="Buondi Craft">
+        </div>
+        <div class="partner-text">
+          <p style="font-family:sans-serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Our coffee partner</p>
+          <h3>Buondi Craft</h3>
+          <p>We proudly brew Buondi Craft — intense, dark-roasted beans from the finest origins.</p>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /page-home -->
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand-name">N'Shtog</div>
+        <div class="footer-brand-sub">coffe&amp;bar</div>
+        <p class="footer-brand-desc">A cozy café in the heart of Pristina. Coffee crafted with intention, guests welcomed with warmth.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="location.html">Location</a>
+      </div>
+      <div class="footer-col">
+        <h5>Visit</h5>
+        <p>Rruga Mbretëresha Teuta</p>
+        <p>Pristina, Kosovo</p>
+        <p style="margin-top:8px;">+383 45 221 144</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 <span>N'Shtog</span> coffe&amp;bar · All rights reserved
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
